@@ -1,0 +1,38 @@
+{
+  "name": "bragg-kinesis",
+  "version": "0.0.0",
+  "description": "Kinesis stream middleware for bragg",
+  "license": "MIT",
+  "repository": "SamVerschueren/bragg-kinesis",
+  "author": {
+    "name": "Sam Verschueren",
+    "email": "sam.verschueren@gmail.com",
+    "url": "github.com/SamVerschueren"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "bragg",
+    "framework",
+    "kinesis",
+    "stream",
+    "streaming",
+    "event",
+    "middleware",
+    "amazon",
+    "aws",
+    "lambda"
+  ],
+  "devDependencies": {
+    "ava": "*",
+    "load-json-file": "^2.0.0",
+    "xo": "*"
+  }
+}
