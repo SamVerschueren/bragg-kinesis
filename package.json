@@ -1,6 +1,6 @@
 {
   "name": "bragg-kinesis",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Kinesis stream middleware for bragg",
   "license": "MIT",
   "repository": "SamVerschueren/bragg-kinesis",
