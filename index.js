@@ -5,7 +5,7 @@ module.exports = opts => {
 	return ctx => {
 		if (!ctx.path && ctx.req.Records && ctx.req.Records.length > 0 && ctx.req.Records[0].eventSource === 'aws:kinesis') {
 			const first = ctx.req.Records[0];
-			const streamName = first.eventSourceARN.split(':').pop();
+			const streamName = first.eventSourceARN.split('/').pop();
 
 			const messages = ctx.req.Records.map(record => {
 				if (first.eventSourceARN !== record.eventSourceARN) {

@@ -35,7 +35,7 @@ test('do nothing if it\'s not a Kinesis event', t => {
 
 test('result', t => {
 	const result = fn(t, fixture3);
-	t.is(result.path, 'kinesis:EXAMPLE');
+	t.is(result.path, 'kinesis:FooStream');
 	t.is(result.method, 'post');
 	t.deepEqual(result.request.body, ['Hello, this is a test 123.']);
 });
@@ -53,5 +53,5 @@ test('json result', t => {
 });
 
 test('path mapping', t => {
-	t.is(fn(t, fixture3, {EXAMPLE: 'foo'}).path, 'kinesis:foo');
+	t.is(fn(t, fixture3, {FooStream: 'Foo'}).path, 'kinesis:Foo');
 });
